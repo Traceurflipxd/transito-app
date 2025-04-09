@@ -1,13 +1,11 @@
-import { NgModule } from '@angular/core';
-import { ServerModule } from '@angular/platform-server';
-import { provideServerRouting } from '@angular/ssr';
-import { AppComponent } from './app.component';
-import { AppModule } from './app.module';
-import { serverRoutes } from './app.routes.server';
+import { mergeApplicationConfig } from '@angular/core';
+import { provideServerRendering } from '@angular/platform-server';
+import { appConfig } from './app.config';
 
-@NgModule({
-  imports: [AppModule, ServerModule],
-  providers: [provideServerRouting(serverRoutes)],
-  bootstrap: [AppComponent],
-})
-export class AppServerModule {}
+const serverConfig = {
+  providers: [
+    provideServerRendering()
+  ]
+};
+
+export const config = mergeApplicationConfig(appConfig, serverConfig);

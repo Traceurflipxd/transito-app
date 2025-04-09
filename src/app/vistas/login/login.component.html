@@ -1,0 +1,29 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <!-- Tabs Titles -->
+
+    <!-- Icon -->
+    <div class="fadeIn first">
+      <img [src]="'/assets/img/user-icon.jpg'" id="icon" alt="User Icon" 
+           style="width: 150px; height: auto; margin: 20px; border-radius: 8px;" />
+    </div>
+
+    <!-- Login Form -->
+    <form [formGroup]="loginForm" (ngSubmit)="onLogin()">
+      <input type="text" id="usuario" class="fadeIn second" formControlName="usuario" placeholder="Usuario">
+      <input type="password" id="password" class="fadeIn third" formControlName="password" placeholder="Contraseña">
+      <input type="submit" class="fadeIn fourth" value="Ingresar" [disabled]="!loginForm.valid">
+    </form>
+
+    <!-- Remind Password -->
+    <div id="formFooter">
+      <a class="underlineHover" href="#">¿Olvidaste tu contraseña?</a>
+    </div>
+
+  </div>
+</div>
