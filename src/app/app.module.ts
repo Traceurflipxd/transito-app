@@ -11,11 +11,13 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './plantillas/header/header.component';
 import { FooterComponent } from './plantillas/footer/footer.component';
 import { routes } from './app.routes';
+import { ReservaComponent } from './vistas/reserva/reserva.component';
 
 @NgModule({
   declarations: [
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    ReservaComponent
   ],
   imports: [
     BrowserModule,
