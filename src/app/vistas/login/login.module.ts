@@ -10,6 +10,6 @@ import { LoginComponent } from './login.component';
     ReactiveFormsModule,
     LoginComponent
   ],
-  exports: [LoginComponent]
+  exports: []
 })
 export class LoginModule { } 

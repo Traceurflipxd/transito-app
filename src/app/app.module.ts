@@ -17,7 +17,6 @@ import { ReservaComponent } from './vistas/reserva/reserva.component';
   declarations: [
     HeaderComponent,
     FooterComponent,
-    ReservaComponent
   ],
   imports: [
     BrowserModule,
