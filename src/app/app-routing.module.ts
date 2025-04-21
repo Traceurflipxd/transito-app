@@ -4,7 +4,7 @@ import { DashboardComponent } from './vistas/dashboard/dashboard.component';
 import { NuevoComponent } from './vistas/nuevo/nuevo.component';
 import { EditarComponent } from './vistas/editar/editar.component';
 import { LoginComponent } from './vistas/login/login.component';
-
+import { ReservaComponent } from './vistas/reserva/reserva.component';
 @NgModule({
   imports: [
     RouterModule.forRoot([
@@ -13,10 +13,11 @@ import { LoginComponent } from './vistas/login/login.component';
       {path: 'dashboard', component: DashboardComponent},
       {path: 'nuevo', component: NuevoComponent},
       {path: 'editar', component: EditarComponent},
+      {path: 'reserva', component: ReservaComponent},
     ])
   ],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
 
-export const routingComponents = [DashboardComponent, NuevoComponent, EditarComponent, LoginComponent];
+export const routingComponents = [DashboardComponent, NuevoComponent, EditarComponent, LoginComponent, ReservaComponent];
