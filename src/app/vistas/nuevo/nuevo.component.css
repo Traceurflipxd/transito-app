@@ -1,0 +1,133 @@
+:root {
+  --primary-color: #0d6efd;
+  --secondary-color: #6c757d;
+  --light-bg: #f8f9fa;
+  --border-radius: 4px;
+  --box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.fadeIn {
+  opacity: 0;
+  animation: fadeIn ease-in 1;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+}
+
+.fadeIn.first {
+  animation-delay: 0.4s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn.first img {
+  transition: transform 0.3s ease;
+}
+
+.fadeIn.first img:hover {
+  transform: scale(1.05);
+}
+
+.tramite-button {
+  width: 100%;
+  text-align: left;
+  padding: 15px 20px;
+  border: none;
+  background-color: var(--primary-color);
+  color: white;
+  font-weight: 500;
+  position: relative;
+  border-radius: var(--border-radius);
+  transition: all 0.3s ease;
+  box-shadow: var(--box-shadow);
+}
+
+
+.table {
+  width: 100%;
+  margin-top: 10px;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.table th {
+  background-color: var(--light-bg);
+  color: var(--primary-color);
+  font-weight: 600;
+  padding: 12px;
+  border-bottom: 2px solid var(--primary-color);
+}
+
+.table td {
+  padding: 12px;
+  border-bottom: 1px solid var(--light-bg);
+  color: var(--secondary-color);
+}
+
+.table tr:hover {
+  background-color: rgba(0,0,0,0.02);
+}
+
+
+@media (max-width: 768px) {
+  .tramite-button {
+    padding: 12px 15px;
+    font-size: 0.95rem;
+  }
+  
+  .tramite-content {
+    padding: 20px;
+  }
+  
+  .tramite-content h6 {
+    font-size: 1rem;
+  }
+  
+  .tramite-content li,
+  .tramite-content p {
+    font-size: 0.95rem;
+  }
+  
+  .table {
+    font-size: 0.9rem;
+  }
+  
+  .table th,
+  .table td {
+    padding: 8px;
+  }
+
+.tramite-button {
+  background-color: #e91e63 !important; 
+}
+
+.tramite-item:first-child .tramite-button {
+  background-color: #1a237e !important;
+}
+
+.collapse {
+  transition: all 0.3s ease;
+}
+
+.footer {
+  margin-top: 3rem;
+  padding: 2rem 0;
+  background-color: var(--light-bg);
+}
+
+.footer-links a {
+  margin-left: 1rem;
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: var(--primary-color);
+}
+}

@@ -4,11 +4,11 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { LoginComponent } from './login.component';
 
 @NgModule({
-  declarations: [LoginComponent],
+  declarations: [],
   imports: [
     CommonModule,
     ReactiveFormsModule
   ],
-  exports: [LoginComponent]
+  exports: []
 })
 export class LoginModule { } 

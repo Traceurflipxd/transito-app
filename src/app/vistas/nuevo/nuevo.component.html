@@ -1,1 +1,178 @@
-<p>nuevo works!</p>
+<!-- HEADER -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <i class="bi bi-car-front"></i> Departamento de Tránsito
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/login">
+            <i class="bi bi-box-arrow-in-right"></i> Iniciar Sesión
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/nuevo">
+            <i class="bi bi-calendar-plus"></i> Reservar Hora
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- BODY -->
+<div class="main-container">
+  <div class="container mt-5 mb-5">
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <div class="card shadow-lg">
+          <div class="card-header bg-primary text-white">
+            <h4 class="mb-0"><i class="bi bi-card-heading"></i> Licencias de Conducir</h4>
+          </div>
+          <div class="card-body">
+            <div class="text-center mb-4">
+              <div class="fadeIn first mb-4">
+                <img [src]="'/assets/img/user-icon.jpg'" alt="User Icon" 
+                     style="width: 250px; height: auto; margin: 20px; border-radius: 8px;" />
+              </div>
+
+            <div class="row g-4">
+              <!-- Primera Licencia -->
+              <div class="col-md-6">
+                <div class="card h-100 service-card">
+                  <div class="card-body text-center">
+                    <i class="bi bi-person-badge service-icon"></i>
+                    <h5 class="card-title">Primeras Licencias</h5>
+                    <p class="card-text">Obtén tu primera licencia de conducir. Incluye examen teórico y práctico.</p>
+                    <button class="btn btn-primary">
+                      <i class="bi bi-calendar-plus"></i> Reservar Examen
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Renovación -->
+              <div class="col-md-6">
+                <div class="card h-100 service-card">
+                  <div class="card-body text-center">
+                    <i class="bi bi-arrow-repeat service-icon"></i>
+                    <h5 class="card-title">Renovación</h5>
+                    <p class="card-text">Renueva tu licencia actual. Incluye examen médico y actualización de datos.</p>
+                    <button class="btn btn-outline-primary">
+                      <i class="bi bi-clock"></i> Agendar Renovación
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Cambio de Clase -->
+              <div class="col-md-6">
+                <div class="card h-100 service-card">
+                  <div class="card-body text-center">
+                    <i class="bi bi-arrows-angle-expand service-icon"></i>
+                    <h5 class="card-title">Cambio de Clase</h5>
+                    <p class="card-text">Amplía las clases de tu licencia actual. Incluye exámenes específicos.</p>
+                    <button class="btn btn-outline-primary">
+                      <i class="bi bi-card-checklist"></i> Solicitar Cambio
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Consultas -->
+              <div class="col-md-6">
+                <div class="card h-100 service-card">
+                  <div class="card-body text-center">
+                    <i class="bi bi-question-circle service-icon"></i>
+                    <h5 class="card-title">Consultas</h5>
+                    <p class="card-text">Información sobre requisitos, documentos y proceso de obtención.</p>
+                    <button class="btn btn-outline-primary">
+                      <i class="bi bi-info-circle"></i> Ver Información
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <!-- Departamento -->
+      <div class="col-md-4 mb-3">
+        <h5 class="text-primary">Departamento de Tránsito</h5>
+        <div class="contact-container">
+          <ul class="list-unstyled">
+            <li><i class="bi bi-geo-alt-fill"></i> Municipalidad Lo espejo</li>
+            <li><i class="bi bi-telephone-fill"></i> Teléfono: 973146125 </li>
+            <li><i class="bi bi-envelope-fill"></i> loespejomunicipal.cl</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Información -->
+      <div class="col-md-4 mb-3">
+        <h5 class="text-primary">Información Importante</h5>
+        <div class="links-container">
+          <ul class="list-unstyled">
+            <li><a href="https://www.chileatiende.gob.cl/fichas/20592-licencias-de-conducir" target="_blank"><i class="bi bi-chevron-right"></i> Licencias de Conducir</a></li>
+            <li><a href="https://practicatest.cl/preguntas/que-documentos-debe-presentar-para-sacar-licencia-de-conducir-clase-b-en-chile/ZJyToQ==" target="_blank"><i class="bi bi-chevron-right"></i> Documentos Necesarios</a></li>
+            <li><a href="https://www.loespejo.cl/" target="_blank"><i class="bi bi-chevron-right"></i> Municipalidad</a></li>
+            <li><a href="https://www.educacionvial.cl/categoria/preguntas-frecuentes/valores-de-licencias-de-conducir" target="_blank"><i class="bi bi-chevron-right"></i> Valores y Aranceles</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Horario de Atención -->
+      <div class="col-md-4 mb-3">
+        <h5 class="text-primary">Horario de Atención</h5>
+        <div class="horario-container">
+          <div class="horario-item">
+            <span class="horario-titulo">
+              <i class="bi bi-clock-fill"></i> Atención General:
+            </span>
+            <div class="horario-detalle">
+              <p class="mb-1">Lunes a Viernes:</p>
+              <ul class="list-unstyled ps-3 mb-2">
+                <li>• Mañana: 8:30 - 14:00</li>
+                <li>• Tarde: 15:00 - 17:30</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="horario-item mt-3">
+            <span class="horario-titulo">
+              <i class="bi bi-car-front-fill"></i> Exámenes prácticos:
+            </span>
+            <div class="horario-detalle">
+              <p class="mb-1">Lunes a Jueves:</p>
+              <ul class="list-unstyled ps-3">
+                <li>• 9:00 - 13:00</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <hr class="my-4">
+
+    <!-- Copyright -->
+    <div class="row footer-bottom">
+      <div class="col-md-6 text-center text-md-start">
+        <p class="mb-0">&copy; 2025 Departamento de Tránsito Municipalidad Lo espejo. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </div>
+</footer>
